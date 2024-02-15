@@ -280,43 +280,97 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 85%;}
 }
 
-.skills .skill .htmlcss{
+.skills .skill .html{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s html forwards;
 }
-@keyframes htmlcss {
+@keyframes html {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 90%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .css{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s css forwards;
 }
-@keyframes photoshop {
+@keyframes css {
     0%{width: 0%;}
     100%{width: 95%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .bootstrap{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s bootstrap forwards;
 }
-@keyframes wordpress {
+@keyframes bootstrap {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .sass{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s sass forwards;
 }
-@keyframes drupal {
+@keyframes sass {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .firebase {
+    width: 0%;
+    animation: 2s firebase  forwards;
+}
+@keyframes firebase  {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .express {
+    width: 0%;
+    animation: 2s express  forwards;
+}
+@keyframes express  {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .node {
+    width: 0%;
+    animation: 2s node  forwards;
+}
+@keyframes node  {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .node {
+    width: 0%;
+    animation: 2s node  forwards;
+}
+@keyframes node  {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .mongo {
+    width: 0%;
+    animation: 2s mongo  forwards;
+}
+@keyframes mongo  {
+    0%{width: 0%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .comunicacion{
