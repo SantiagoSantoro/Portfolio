@@ -537,7 +537,7 @@ html {
     }
 
     100% {
-        width: 99%;
+        width: 90%;
     }
 }
 
@@ -552,16 +552,16 @@ html {
     }
 
     100% {
-        width: 65%;
+        width: 95%;
     }
 }
 
-.skills .skill .proyect {
+.skills .skill .aprendizaje {
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 2s aprendizaje forwards;
 }
 
-@keyframes proyect {
+@keyframes aprendizaje {
     0% {
         width: 0%;
     }
