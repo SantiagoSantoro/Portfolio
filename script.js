@@ -36,6 +36,7 @@ function efectoHabilidades(){
         habilidades[12].classList.add("creatividad");
         habilidades[13].classList.add("dedicacion");
         habilidades[14].classList.add("aprendizaje");
+        habilidades[15].classList.add("resolucion");
     }
 }
 
