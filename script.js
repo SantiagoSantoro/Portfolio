@@ -37,6 +37,7 @@ function efectoHabilidades(){
         habilidades[13].classList.add("dedicacion");
         habilidades[14].classList.add("aprendizaje");
         habilidades[15].classList.add("resolucion");
+        habilidades[16].classList.add("github");
     }
 }
 

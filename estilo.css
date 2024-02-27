@@ -592,6 +592,21 @@ html {
     }
 }
 
+.skills .skill .github {
+    width: 0%;
+    animation: 2s github forwards;
+}
+
+@keyframes github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
 /* SECCION CURRICULUM */
 .curriculum {
     background-color: #1e2326;
