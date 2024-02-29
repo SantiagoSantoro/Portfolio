@@ -88,6 +88,7 @@ html {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
+    max-height: 550px;
     /* Ancho automático basado en el contenido */
     margin-top: 95px; /* Margen superior */
     margin-right: auto;
