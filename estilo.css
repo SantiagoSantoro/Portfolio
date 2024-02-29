@@ -61,10 +61,6 @@ html {
     color: #1CB698;
 }
 
-/* Estilos de los enlaces de los certificados */
-
-
-
 
 
 .nav-responsive {
@@ -87,22 +83,20 @@ html {
     align-items: center;
 }
 
-/* Ajuste del contenedor del banner */
 
 .inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
-    width: auto;
+    max-width: 350px;
     /* Ancho automático basado en el contenido */
-    margin: 80px auto 0;
-    /* Margen superior para desplazar el contenedor hacia abajo */
+    margin-top: 95px; /* Margen superior */
+    margin-right: auto;
+    margin-bottom: 20px; /* Margen inferior */
+    margin-left: auto;
     text-align: center;
     border-radius: 40px;
-    overflow: hidden;
-    /* Evitar que el texto salga del contenedor */
-    max-height: 570px;
-    /* Altura máxima del contenedor */
 }
+
 
 .inicio .contenido-banner img {
     margin-top: 40px;
@@ -941,6 +935,10 @@ footer .redes a {
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+}
+
+footer .redes a:hover {
+    background-color: #1CB698;
 }
 
 footer .arriba {
