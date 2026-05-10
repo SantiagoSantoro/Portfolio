@@ -63,6 +63,7 @@ html {
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    background-clip: text;
 
     text-decoration: none;
 
@@ -117,8 +118,7 @@ html {
     color:#fff;
     display:flex;
     align-items:center;
-
-    padding:120px 20px 60px;
+    padding: 120px 20px 60px;
 }
 
 
@@ -848,6 +848,7 @@ box-shadow:0 10px 25px rgba(0,0,0,.35);
     background:linear-gradient(90deg,#000,var(--red));
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    background-clip: text;
 
     transform:translateY(10px);
 }
@@ -1097,12 +1098,14 @@ footer .arriba {
 }
 /* HERO NUEVO */
 .hero-contenedor{
-    max-width:1100px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 👈 cambiá esto */
+    gap: 60px;
 }
 
 /* texto */
