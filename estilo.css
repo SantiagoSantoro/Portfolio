@@ -191,28 +191,17 @@ html {
 
 .sobremi .fila .col ul li span {
     background-color: var(--yellow);
-    padding: 3px;
+    color: #000;
+    padding: 3px 8px;
     font-weight: bold;
     border-radius: 5px;
+    display: inline-block;
 }
-
 .sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
 }
 
-.sobremi .fila .col .contenedor-intereses .interes {
-    width: 100px;
-    height: 100px;
-    background-color: var(--bg2);;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
     background-color: var(--yellow);
@@ -258,7 +247,49 @@ color:var(--yellow);
 .sobremi button:hover .overlay {
     width: 100%;
 }
+.sobremi .fila .col .contenedor-intereses .interes {
+    width: 110px;
+    height: 110px;
+    background-color: var(--bg2);
+    border-radius: 14px;
+    margin: 0 15px 15px 0;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .25s ease;
+
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--yellow);
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* 🔥 HOVER MÁS PRO */
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    transform: translateY(-8px) scale(1.06);
+    border: 1px solid var(--yellow);
+    box-shadow: 0 12px 30px rgba(255, 209, 0, .15);
+    background: linear-gradient(145deg, #1b1b1b, #111);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover i {
+    transform: scale(1.2);
+    color: #fff;
+}
 /* SECCION S K I L L S */
 .skills {
     background-color: var(--bg2);;
@@ -1171,6 +1202,18 @@ footer .arriba {
     transition: all .3s ease;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    animation: fadeIn .5s ease forwards;
+}
+
+.hero-redes a:nth-child(1){ animation-delay: .5s; }
+.hero-redes a:nth-child(2){ animation-delay: .6s; }
+.hero-redes a:nth-child(3){ animation-delay: .7s; }
+.hero-redes a:nth-child(4){ animation-delay: .8s; }
+.hero-redes a:nth-child(5){ animation-delay: .9s; }
+
+@keyframes fadeIn{
+    to{ opacity:1; }
 }
 
 .hero-redes a:hover{
@@ -1179,7 +1222,44 @@ footer .arriba {
     transform: translateY(-6px) scale(1.15) rotate(-8deg);
     box-shadow: 0 0 20px rgba(255, 209, 0, .6);
 }
+.hero-texto{
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: enterLeft .8s ease forwards;
+    
+}
+.hero-texto p{
+    line-height: 1.6;
+    max-width: 600px;
+}
 
+.intro{
+    font-weight: bold;
+    color: var(--yellow);
+}
+.sobremi p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #ddd;
+}
+
+.sobremi .intro{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--yellow);
+    letter-spacing: 1px;
+}
+
+.sobremi .intro{
+    color: var(--yellow);
+}
+@keyframes enterLeft{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /* responsive */
 @media (max-width:900px){
     .hero-contenedor{
@@ -1189,5 +1269,17 @@ footer .arriba {
 
     .hero-botones{
         justify-content:center;
+    }
+}
+.contenido-banner{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: enterUp .8s ease .3s forwards;
+}
+
+@keyframes enterUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
