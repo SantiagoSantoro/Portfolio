@@ -1174,11 +1174,21 @@ footer .arriba {
     box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.hero-card img{
+.hero-card .hero-img {
+    height: 245px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 3px solid var(--yellow);
+    border-radius: 15px;
+}
+
+.hero-card .hero-img img{
     width:100%;
-    border-radius:15px;
-    border:3px solid var(--yellow);
-    margin-bottom:15px;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center 25%;
+    filter:saturate(.82) contrast(1.04) brightness(.94);
 }
 
 .hero-card h2{
@@ -1289,5 +1299,389 @@ footer .arriba {
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.language-toggle {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--yellow);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--yellow);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+    background: var(--yellow);
+    color: #000;
+}
+
+.stack-title {
+    margin: 4px 0 14px;
+    color: var(--yellow);
+    font-size: 17px;
+}
+
+.tech-stack,
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    list-style: none;
+}
+
+.tech-stack {
+    margin: 0 0 28px;
+}
+
+.skills .fila {
+    gap: 36px;
+}
+
+.skills .fila .col {
+    width: 50%;
+}
+
+.skills .stack-title {
+    margin-top: 20px;
+}
+
+.soft-skills {
+    margin-top: 4px;
+}
+
+.tech-stack li,
+.project-tech li {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 11px;
+    border: 1px solid rgba(255, 209, 0, .35);
+    border-radius: 999px;
+    background: rgba(255, 209, 0, .07);
+    color: var(--white);
+    font-size: 13px;
+}
+
+.tech-stack i {
+    color: var(--yellow);
+}
+
+.portfolio .galeria .proyecto.proyecto-app {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    align-self: flex-start;
+    background: var(--card);
+    border: 1px solid rgba(255, 209, 0, .55);
+    border-radius: 14px;
+    cursor: default;
+}
+
+.portfolio .galeria .proyecto.proyecto-app:hover {
+    transform: translateY(-5px);
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    overflow: hidden;
+}
+
+.portfolio .galeria .proyecto .project-gallery img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portfolio .galeria .proyecto .project-gallery img:first-child {
+    grid-column: 1 / -1;
+    height: 250px;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.project-content p {
+    margin-bottom: 16px;
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: normal;
+}
+
+.project-status {
+    display: inline-block;
+    color: var(--yellow);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.project-tech li {
+    padding: 6px 9px;
+    font-size: 12px;
+}
+
+.portfolio .galeria .proyecto > .project-tech {
+    margin: 12px 10px 14px;
+}
+
+.portfolio .galeria .proyecto.proyecto-app .project-tech {
+    margin: 0;
+}
+
+.football-art {
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background:
+        radial-gradient(circle at center, rgba(255, 209, 0, .2), transparent 38%),
+        linear-gradient(140deg, #102b20, #101512 65%);
+    color: var(--yellow);
+}
+
+.football-art i {
+    font-size: 78px;
+}
+
+.football-art span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 980px) {
+    .contenedor-header header {
+        gap: 12px;
+    }
+
+    .contenedor-header header nav {
+        order: 4;
+    }
+}
+
+@media (max-width: 500px) {
+    .contenedor-header header .logo a {
+        font-size: 25px;
+    }
+
+    .hero-texto h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .language-toggle {
+        margin-left: auto;
+    }
+
+    .hero-card .hero-img {
+        height: 225px;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .project-content {
+        padding: 16px;
+    }
+
+    .portfolio .galeria .proyecto .project-gallery img:first-child {
+        height: 190px;
+    }
+
+    .portfolio .galeria .proyecto .project-gallery img {
+        height: 100px;
+    }
+
+    .football-art {
+        min-height: 240px;
+    }
+}
+
+.portfolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.portfolio .galeria .proyecto,
+.portfolio .galeria .proyecto.proyecto-app {
+    width: 100%;
+    max-width: none;
+    height: 390px;
+    min-width: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    border: 1px solid rgba(255, 209, 0, .55);
+    border-radius: 14px;
+    background: var(--card);
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.portfolio .galeria .proyecto:hover,
+.portfolio .galeria .proyecto:focus-within {
+    transform: translateY(-6px);
+    border-color: var(--yellow);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .5), 0 0 18px rgba(255, 209, 0, .12);
+}
+
+.portfolio .galeria .proyecto > a {
+    position: relative;
+    display: block;
+    flex: 0 0 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.portfolio .galeria .proyecto > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    opacity: 0;
+    background: rgba(255, 209, 0, .88);
+    letter-spacing: normal;
+    transition: opacity .3s ease;
+}
+
+.portfolio .galeria .proyecto:hover .overlay,
+.portfolio .galeria .proyecto:focus-within .overlay {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    transform: translateY(8px);
+}
+
+.portfolio .galeria .proyecto:hover .overlay h3,
+.portfolio .galeria .proyecto:focus-within .overlay h3 {
+    transform: translateY(0);
+}
+
+.portfolio .galeria .proyecto .overlay p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.portfolio .galeria .proyecto .project-gallery {
+    position: relative;
+    flex: 0 0 180px;
+    height: 180px;
+    grid-template-columns: 1.15fr .85fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 3px;
+}
+
+.portfolio .galeria .proyecto .project-gallery img,
+.portfolio .galeria .proyecto .project-gallery img:first-child {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    grid-column: auto;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portfolio .galeria .proyecto .project-gallery img:first-child {
+    grid-row: 1 / -1;
+}
+
+.portfolio .galeria .proyecto .project-gallery .overlay {
+    position: absolute;
+    z-index: 1;
+}
+
+.portfolio .galeria .proyecto .football-art {
+    position: relative;
+    flex: 0 0 180px;
+    min-height: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.portfolio .galeria .proyecto .football-art .overlay {
+    position: absolute;
+    z-index: 1;
+}
+
+.portfolio .galeria .proyecto .project-content {
+    flex: 1;
+    min-height: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .galeria .proyecto .project-content h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.portfolio .galeria .proyecto .project-content p {
+    display: -webkit-box;
+    margin: 0 0 12px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.portfolio .galeria .proyecto .project-content .project-tech {
+    margin: auto 0 0;
+    gap: 6px;
+    align-content: flex-end;
+}
+
+.portfolio .galeria .proyecto .project-tech li {
+    padding: 5px 8px;
+    font-size: 11px;
+}
+
+@media (max-width: 900px) {
+    .portfolio .galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio .galeria {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .portfolio .galeria .proyecto,
+    .portfolio .galeria .proyecto.proyecto-app {
+        height: 390px;
     }
 }

@@ -22,14 +22,17 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" data-i18n="navHome">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" data-i18n="navAbout">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" data-i18n="navSkills">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" data-i18n="navResume">CURRÍCULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" data-i18n="navPortfolio">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" data-i18n="navContact">CONTACTO</a></li>
                 </ul>
             </nav>
+            <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language to English">
+                EN
+            </button>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -46,16 +49,15 @@
 
             <span class="tag">FULLSTACK DEVELOPER</span>
 
-            <h1>Construyo experiencias web modernas</h1>
+            <h1 data-i18n="heroTitle">Desarrollo aplicaciones web y móviles de principio a fin</h1>
 
-            <p>
-                Desarrollador Fullstack especializado en React, Node.js y MongoDB.
-                Me enfoco en crear interfaces rápidas, responsivas y con una estética moderna.
+            <p data-i18n="heroDescription">
+                Desarrollador Full Stack enfocado en crear aplicaciones web y móviles, desde interfaces intuitivas hasta soluciones backend confiables.
             </p>
 
             <div class="hero-botones">
-                <a href="#portfolio" class="btn-principal">Ver proyectos</a>
-                <a href="#contacto" class="btn-secundario">Contacto</a>
+                <a href="#portfolio" class="btn-principal" data-i18n="heroProjects">Ver proyectos</a>
+                <a href="#contacto" class="btn-secundario" data-i18n="heroContact">Contacto</a>
             </div>
 
         </div>
@@ -100,29 +102,29 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p class="intro">
+            <h2 data-i18n="aboutTitle">Sobre mí</h2>
+            <p class="intro" data-i18n="aboutIntro">
                 ¡Hola!, mi nombre es Santiago Santoro.
               </p>
 
-<p>Soy desarrollador Full Stack enfocado en el desarrollo de aplicaciones web y móviles utilizando React, Node.js, TypeScript y React Native.</p>
+<p data-i18n="aboutParagraph1">Soy desarrollador Full Stack enfocado en el desarrollo de aplicaciones web y móviles utilizando React, Node.js, TypeScript y React Native.</p>
 
-<p>Me especializo en construir productos completos desde el frontend hasta el backend, con experiencia trabajando con bases de datos como MongoDB, Firebase y Supabase.</p>
+<p data-i18n="aboutParagraph2">Me especializo en construir productos completos desde el frontend hasta el backend, con experiencia trabajando con bases de datos como MongoDB, Firebase y Supabase.</p>
 
-<p>Actualmente desarrollo aplicaciones modernas, responsivas y escalables, priorizando rendimiento, experiencia de usuario y buenas prácticas de desarrollo.</p>
+<p data-i18n="aboutParagraph3">Actualmente desarrollo aplicaciones modernas, responsivas y escalables, priorizando rendimiento, experiencia de usuario y buenas prácticas de desarrollo.</p>
 
-<p>Además, cuento con experiencia previa en roles administrativos, lo que fortaleció mis habilidades de organización, comunicación y trabajo en equipo.</p>
+<p data-i18n="aboutParagraph4">Además, cuento con experiencia previa en roles administrativos, lo que fortaleció mis habilidades de organización, comunicación y trabajo en equipo.</p>
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3 data-i18n="personalDetails">Datos personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
+                            <strong data-i18n="birthday">Cumpleaños</strong>
                             11-01-1988
                         </li>
                         <li>
-                            <strong>Email</strong>
+                            <strong data-i18n="email">Email</strong>
                             <a href="mailto:santiagosantoro10@gmail.com" target="_blank">santiagosantoro10@gmail.com</a>
                         </li>
                         <li>
@@ -131,11 +133,11 @@
                                 target="_blank">https://github.com/SantiagoSantoro</a>
                         </li>
                         <li>
-                            <strong>Ubicación</strong>
+                            <strong data-i18n="location">Ubicación</strong>
                             Rosario. Santa Fe. Argentina
                         </li>
                         <li>
-                            <strong>Cargo</strong>
+                            <strong data-i18n="position">Cargo</strong>
                             <span>FREELANCE</span>
                         </li>
                     </ul>
@@ -143,7 +145,7 @@
 
                 <!-- intereses -->
 <div class="col">
-    <h3>Enfoque</h3>
+    <h3 data-i18n="focus">Enfoque</h3>
 
     <div class="contenedor-intereses">
 
@@ -193,14 +195,14 @@
             <a href="https://raw.githubusercontent.com/SantiagoSantoro/Portfolio/main/cv/Santiago_Santoro_Desarrollador_Fullstack.pdf"
                 download="Santiago_Santoro_Desarrollador_Fullstack.pdf">
                 <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span data-i18n="downloadCv">Descargar CV</span> <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </button>
             </a>
             <a href="https://raw.githubusercontent.com/SantiagoSantoro/Portfolio/main/cv/Santiago_Santoro_Fullstack_Developer.pdf"
                 download="Santiago_Santoro_Fullstack_Developer">
                 <button>
-                    Download Resume <i class="fa-solid fa-download"></i>
+                    <span data-i18n="downloadResume">Descargar CV en inglés</span> <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </button>
             </a>
@@ -210,215 +212,104 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2 data-i18n="skillsTitle">Tecnologías y habilidades</h2>
             <div class="fila">
-                <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span><i class="fab fa-js"></i> JavaScript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-html5"></i> HTML</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-css3-alt"></i> CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-bootstrap"></i> Bootstrap/ReactBootstrap</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-sass"></i> Sass</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-react"></i> React Js</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fa fa-database"></i> Firebase/Firestore</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fas fa-server"></i> Express</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-node-js"></i> Node Js</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fa fa-database"></i> MongoDB/Mongoose</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 data-i18n="technicalSkills">Tecnologías</h3>
+                    <h4 class="stack-title" data-i18n="webTechnologies">Web</h4>
+                    <ul class="tech-stack">
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-solid fa-code"></i> TypeScript</li>
+                        <li><i class="fa-brands fa-react"></i> React</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                        <li><i class="fa-brands fa-sass"></i> Sass</li>
+                        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                        <li><i class="fa-solid fa-server"></i> Express</li>
+                        <li><i class="fa-solid fa-layer-group"></i> Next.js</li>
+                    </ul>
+                    <h4 class="stack-title" data-i18n="mobileCloudSkills">Mobile y cloud</h4>
+                    <ul class="tech-stack">
+                        <li><i class="fa-brands fa-react"></i> React Native</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Expo</li>
+                        <li><i class="fa-solid fa-database"></i> Supabase</li>
+                        <li><i class="fa-solid fa-database"></i> Firebase</li>
+                        <li><i class="fa-solid fa-database"></i> MongoDB</li>
+                    </ul>
+                    <h4 class="stack-title" data-i18n="tools">Herramientas</h4>
+                    <ul class="tech-stack">
+                        <li><i class="fa-brands fa-github"></i> Git / GitHub</li>
+                        <li><i class="fa-solid fa-vial"></i> Detox E2E</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
+                        <li><i class="fa-solid fa-plug"></i> Thunder Client</li>
+                    </ul>
                 </div>
-                <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <span>Aprendizaje continuo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <span>Resolución de problemas</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="skill">
-                        <h3>Control De Versiones</h3>
-                        <span><i class="fab fa-github"></i> Git/GitHub</span>
-                        <br>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 data-i18n="professionalSkills">Habilidades profesionales</h3>
+                    <ul class="tech-stack soft-skills">
+                        <li data-i18n="communication">Comunicación</li>
+                        <li data-i18n="teamwork">Trabajo en equipo</li>
+                        <li data-i18n="creativity">Creatividad</li>
+                        <li data-i18n="dedication">Dedicación</li>
+                        <li data-i18n="continuousLearning">Aprendizaje continuo</li>
+                        <li data-i18n="problemSolving">Resolución de problemas</li>
+                    </ul>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2 data-i18n="resumeTitle">Currículum</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    <h3>Educación</h3>
+                    <h3 data-i18n="education">Educación</h3>
                     <div class="item izq">
-                        <h4>Carrera de Desarrollo Full-Stack</h4>
+                        <h4 data-i18n="fullStackCourse">Carrera de Desarrollo Full-Stack</h4>
                         <span class="casa">Academia Coderhouse</span>
                         <span class="fecha">09/2022 - 01/2024</span>
-                        <p>Carrera de Desarrollo Full-Stack. Duración: 1 año y 4 meses.</p>
-                        <p>En mi trayectoria, he completado una Carrera de Desarrollo Full-Stack con una duración de 1
+                        <p data-i18n="coderhouseDuration">Carrera de Desarrollo Full-Stack. Duración: 1 año y 4 meses.</p>
+                        <p data-i18n="coderhouseSummary">En mi trayectoria, he completado una Carrera de Desarrollo Full-Stack con una duración de 1
                             año y 4 meses. Durante este programa, adquirí conocimientos sólidos en una amplia gama de
                             áreas clave del desarrollo web.</p>
-                        <p>Entre los cursos aprobados se encuentran:</p>
+                        <p data-i18n="coursesCompleted">Entre los cursos aprobados se encuentran:</p>
                         <ul>
-                            <li>Desarrollo Web: Donde aprendí los fundamentos esenciales de la creación de sitios y
+                            <li data-i18n="webCourseDescription">Desarrollo Web: Donde aprendí los fundamentos esenciales de la creación de sitios y
                                 aplicaciones web, incluyendo HTML, CSS y principios de diseño responsivo.</li>
-                            <li>Javascript: Este curso me permitió dominar el lenguaje de programación fundamental para
+                            <li data-i18n="javascriptCourseDescription">Javascript: Este curso me permitió dominar el lenguaje de programación fundamental para
                                 el desarrollo web, comprendiendo conceptos como variables, funciones, objetos, y el
                                 manejo del DOM.</li>
-                            <li>React: En este curso, profundicé mis habilidades en el desarrollo de interfaces de
+                            <li data-i18n="reactCourseDescription">React: En este curso, profundicé mis habilidades en el desarrollo de interfaces de
                                 usuario dinámicas y escalables utilizando la biblioteca de JavaScript React, aprendiendo
                                 sobre componentes, estado, props y gestión de eventos.</li>
-                            <li>Programación back-end: Este curso me proporcionó una sólida comprensión de los
+                            <li data-i18n="backendCourseDescription">Programación back-end: Este curso me proporcionó una sólida comprensión de los
                                 principios y técnicas necesarias para desarrollar la lógica y la funcionalidad del
                                 servidor, utilizando tecnologías como Node.js, Express.js y bases de datos relacionales
                                 y no relacionales.</li>
                         </ul>
-                        <p>Estos cursos me han brindado una base sólida en desarrollo web tanto en el lado del cliente
+                        <p data-i18n="coderhouseConclusion">Estos cursos me han brindado una base sólida en desarrollo web tanto en el lado del cliente
                             como en el del servidor, preparándome para abordar proyectos complejos como desarrollador
                             Full-Stack.</p>
 
                         <br>
-                        <h4>Certificados:</h4>
+                        <h4 data-i18n="certificates">Certificados:</h4>
                         <p>
                         <ul>
                             <li><a href="https://www.coderhouse.com/certificados/65b179e4fb7a7c47b58d0b76?lang=es"
-                                    target="_blank">Carrera de Desarrollo Full-Stack</a></li>
+                                    target="_blank" data-i18n="fullStackCourse">Carrera de Desarrollo Full-Stack</a></li>
                             <li><a href="https://www.coderhouse.com/certificados/65b179e4fb7a7c59348d0b6b?lang=es"
-                                    target="_blank">Programación Backend</a></li>
+                                    target="_blank" data-i18n="backendProgramming">Programación Backend</a></li>
                             <li><a href="https://www.coderhouse.com/certificados/6480edc55af74400029e043b?lang"
-                                    target="_blank">Carrera de Desarrollo Front end React</a></li>
+                                    target="_blank" data-i18n="reactCareer">Carrera de Desarrollo Front end React</a></li>
                             <li><a href="https://www.coderhouse.com/certificados/6480edc55af74400029e043b?lang"
                                     target="_blank">React Js</a></li>
                             <li><a href="https://www.coderhouse.com/certificados/641e35e065a18f00023e8cfc"
                                     target="_blank">JavaScript</a></li>
                             <li><a href="https://www.coderhouse.com/certificados/63d142ac26c8de000ea8bfb3"
-                                    target="_blank">Desarrollo Web</a></li>
+                                    target="_blank" data-i18n="webDevelopment">Desarrollo Web</a></li>
                         </ul>
                         </p>
                         <div class="conectori">
@@ -426,15 +317,15 @@
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Se Programar</h4>
+                        <h4 data-i18n="seProgramar">Se Programar</h4>
                         <span class="casa">Argentina Programa</span>
                         <span class="fecha">05/2022 - 10/2022</span>
-                        <p>Curso Se programar de Argentina programa. Duración: 5 meses.</p>
-                        <p>Participación en el curso 'Se Programar' ofrecido por Argentina Programa. Durante este
+                        <p data-i18n="seProgramarDuration">Curso Se programar de Argentina programa. Duración: 5 meses.</p>
+                        <p data-i18n="seProgramarDescription">Participación en el curso 'Se Programar' ofrecido por Argentina Programa. Durante este
                             programa profundicé mis conocimientos en lenguajes como Gobstones,
                             Javascript y Ruby, además, fortalecí mi comprensión en lógica de programación.</p>
                         <br>
-                        <h4>Certificado:</h4>
+                        <h4 data-i18n="certificate">Certificado:</h4>
                         <p>
                         <ul>
                             <li><a href="https://seprogramar.inti.gob.ar/inti/certificates/verify/ifgfQ5M_2HlAj0B3"
@@ -445,22 +336,22 @@
                             </div>
                     </div>
                     <div class="item izq">
-                        <h4>Responsive Web Designer/JavaScript Agorithms And Data Structures</h4>
+                        <h4 data-i18n="freeCodeCampCourse">Responsive Web Designer/JavaScript Algorithms And Data Structures</h4>
                         <span class="casa">FreeCodeCamp</span>
                         <span class="fecha">01/2022 - 09/2022</span>
-                        <p>Cursos del sitio FreeCodeCamp. Duración: 8 meses.</p>
-                        <p>Durante estos cursos, adquirí habilidades en HTML y CSS para diseño web, y profundicé en
+                        <p data-i18n="freeCodeCampDuration">Cursos del sitio FreeCodeCamp. Duración: 8 meses.</p>
+                        <p data-i18n="freeCodeCampDescription">Durante estos cursos, adquirí habilidades en HTML y CSS para diseño web, y profundicé en
                             algoritmos y estructuras de datos con JavaScript.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>HTLM5 - CSS3</h4>
-                        <span class="casa">Educación autodicacta</span>
+                        <h4>HTML5 - CSS3</h4>
+                        <span class="casa" data-i18n="selfTaught">Educación autodidacta</span>
                         <span class="fecha">08/2021 - 01/2022</span>
-                        <p>Cursos online de diferentes programadores Edutubers. Duración: 5 meses.</p>
-                        <p>Durante estos cursos, adquirí habilidades en HTML y CSS.</p>
+                        <p data-i18n="selfTaughtDuration">Cursos online de diferentes programadores Edutubers. Duración: 5 meses.</p>
+                        <p data-i18n="selfTaughtDescription">Durante estos cursos, adquirí habilidades en HTML y CSS.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -468,12 +359,21 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia Profesional</h3>
+                    <h3 data-i18n="professionalExperience">Experiencia profesional</h3>
+                    <div class="item der">
+                        <h4 data-i18n="fullStackDeveloper">Full-Stack Developer</h4>
+                        <span class="casa">Upraze Systems</span>
+                        <span class="fecha">01/2026 - 10/2026</span>
+                        <p data-i18n="uprazeDescription">Trabajé en Muscul-Arte, una aplicación para la gestión de gimnasios. Participé en la gestión de la base de datos y los usuarios, y desarrollé funcionalidades frontend para administrar rutinas y días de entrenamiento. También implementé pruebas end-to-end con Detox.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
                     <div class="item der">
                         <h4>Full-Stack Developer</h4>
                         <span class="casa">Autónomo</span>
                         <span class="fecha">07/2023 - 01/2024</span>
-                        <p>Desarrollé un proyecto de E-commerce utilizando Node.js, Express.js y MongoDB como
+                        <p data-i18n="backendExperience">Desarrollé un proyecto de E-commerce utilizando Node.js, Express.js y MongoDB como
                             base de datos, y Handlebars como reenderizador. Este proyecto
                             incluyó el desarrollo completo del frontend y el backend, implementando una API RESTful para
                             la gestión de una tienda virtual. Además, utilicé tecnologías como JWT, Passport y Express
@@ -486,10 +386,10 @@
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front-End Developer</h4>
+                        <h4 data-i18n="frontendDeveloper">Front-End Developer</h4>
                         <span class="casa">Autónomo</span>
                         <span class="fecha">03/2023 - 06/2023</span>
-                        <p>Desarrollé un proyecto llamado Xtreme Shop, un E-commerce creado con React, React
+                        <p data-i18n="xtremeExperience">Desarrollé un proyecto llamado Xtreme Shop, un E-commerce creado con React, React
                             Bootstrap y Firebase. Xtreme Shop simula una tienda de skate e indumentaria, ofreciendo a
                             los usuarios la posibilidad de explorar productos, agregarlos al carrito y completar el
                             proceso de compra. Implementé un sistema de mensajería para la interacción con los clientes
@@ -502,11 +402,10 @@
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front-End Developer</h4>
+                        <h4 data-i18n="frontendDeveloper">Front-End Developer</h4>
                         <span class="casa">Autónomo</span>
                         <span class="fecha">09/2022 - 03/2023</span>
-                        <p>
-                        <p>Desarrollé un sitio web para una banda musical que incluye una sección de merchandising
+                        <p data-i18n="underMyFeetExperience">Desarrollé un sitio web para una banda musical que incluye una sección de merchandising
                             simulando un ecommerce. Este proyecto fue desarrollado utilizando JavaScript, HTML, CSS,
                             Bootstrap y Sass. La sección de merchandising permite a los usuarios explorar productos
                             relacionados con la banda, agregarlos al carrito y completar un proceso de compra simulado.
@@ -515,16 +414,15 @@
                             para una gestión más eficiente y modular del código CSS. Este proyecto me permitió aplicar
                             mis habilidades en el desarrollo web frontend y la creación de experiencias de usuario
                             interactivas.</p>
-                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Administración, Logística y Depósito</h4>
+                        <h4 data-i18n="adminLogistics">Administración, Logística y Depósito</h4>
                         <span class="casa">Limansky S.A.</span>
                         <span class="fecha">01/2012 - 01/2023</span>
-                        <p>Como operador de sistema de gestión en Limansky S.A., mi labor se centraba en varias
+                        <p data-i18n="limanskyExperience">Como operador de sistema de gestión en Limansky S.A., mi labor se centraba en varias
                             funciones clave, destacando la gestión de facturación electrónica y la carga de pedidos.
                             Además, coordinaba los viajes de entrega en Rosario y sus alrededores, junto con la
                             recepción de camiones de mercadería y el control de cargas. Me encargaba también de la
@@ -536,10 +434,10 @@
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Aux. Administrativo de RRHH y Contabilidad</h4>
+                        <h4 data-i18n="hrAccounting">Aux. Administrativo de RRHH y Contabilidad</h4>
                         <span class="casa">Conexys S.R.L.</span>
                         <span class="fecha">04/2007 - 03/2011</span>
-                        <p>Operador de sistema Tango 3 Evolución en el área de facturación. Me encargaba de la gestión
+                        <p data-i18n="conexysExperience">Operador de sistema Tango 3 Evolución en el área de facturación. Me encargaba de la gestión
                             integral de cuentas corrientes, contratación de empleados, trámites bancarios, gestiones en
                             organismos como Afip y Anses, coordinación interdepartamental, asistencia al personal y
                             preparación de documentación para licitaciones públicas y privadas en diversas ciudades.</p>
@@ -555,60 +453,128 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2 data-i18n="portfolioTitle">Proyectos</h2>
             <div class="galeria">
-                <div class="proyecto">
+                <article class="proyecto proyecto-app">
+                    <div class="project-gallery">
+                        <img src="img/MusculArte Teacher Dashboard.jpeg" alt="Panel de entrenador de Muscul-Arte" data-i18n-alt="musculArteTeacherAlt">
+                        <img src="img/MusculArte Dashboard.jpeg" alt="Panel principal de Muscul-Arte" data-i18n-alt="musculArteDashboardAlt">
+                        <img src="img/MusculArte Roles.jpeg" alt="Gestión de roles en Muscul-Arte" data-i18n-alt="musculArteRolesAlt">
+                        <div class="overlay">
+                            <h3>Muscul-Arte</h3>
+                            <p data-i18n="mobilePrivate">App móvil · Sin demo web (repo privado)</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Muscul-Arte</h3>
+                        <p data-i18n="musculArteDescription">Aplicación para la gestión de gimnasios. En Upraze Systems trabajé en la base de datos y gestión de usuarios, funcionalidades de rutinas y días de entrenamiento, y pruebas E2E.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>React Native</li>
+                            <li>Expo</li>
+                            <li>TypeScript</li>
+                            <li>Supabase</li>
+                            <li>Detox E2E</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto proyecto-app football-project">
+                    <div class="football-art" aria-hidden="true">
+                        <i class="fa-solid fa-futbol"></i>
+                        <span>ARGENTINA</span>
+                        <div class="overlay">
+                            <h3>Fútbol Argentino Live</h3>
+                            <p data-i18n="inDevelopment">En desarrollo</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fútbol Argentino Live</h3>
+                        <p data-i18n="footballDescription">Aplicación de fútbol argentino para consultar resultados, partidos en vivo, tablas de posiciones, promedios e historias de los clubes.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>Next.js</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto">
                     <a href="https://programacion-backend-48xi.onrender.com" target="_blank">
-                        <img src="img/backend.jpg" alt="">
+                        <img src="img/backend.jpg" alt="Proyecto de e-commerce backend">
                         <div class="overlay">
                             <h3>E-commerce Backend</h3>
-                            <p>Desarrollo Full-Stack MERN</p>
+                            <p data-i18n="backendProjectSummary">E-commerce Full Stack con API REST, autenticación de usuarios y documentación con Swagger.</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
+                    <div class="project-content">
+                        <h3>E-commerce Backend</h3>
+                        <p data-i18n="backendProjectSummary">E-commerce Full Stack con API REST, autenticación de usuarios y documentación con Swagger.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto">
                     <a href="https://xtreme-shop.netlify.app/" target="_blank">
-                        <img src="img/xtr-shop.jpg" alt="">
+                        <img src="img/xtr-shop.jpg" alt="Vista de X-treme Shop">
                         <div class="overlay">
                             <h3>X-treme Shop</h3>
-                            <p>Desarrollo Front-End React Js</p>
+                            <p data-i18n="xtremeProjectSummary">Tienda online de skate con catálogo, carrito y checkout simulado conectado a Firebase.</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
+                    <div class="project-content">
+                        <h3>X-treme Shop</h3>
+                        <p data-i18n="xtremeProjectSummary">Tienda online de skate con catálogo, carrito y checkout simulado conectado a Firebase.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>React</li><li>React Bootstrap</li><li>Firebase</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto">
                     <a href="https://santiagosantoro.github.io/Proyecto-propio/pages/merch.html" target="_blank">
-                        <img src="img/merch.png" alt="">
+                        <img src="img/merch.png" alt="Tienda de merchandising de Under My Feet">
                         <div class="overlay">
                             <h3>E-commerce Under My Feet</h3>
-                            <p>Desarrollo Front-End JavaScript</p>
+                            <p data-i18n="merchProjectSummary">Sitio para una banda con tienda de merchandising, carrito y proceso de compra simulado.</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
+                    <div class="project-content">
+                        <h3>E-commerce Under My Feet</h3>
+                        <p data-i18n="merchProjectSummary">Sitio para una banda con tienda de merchandising, carrito y proceso de compra simulado.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>Sass</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto">
                     <a href="https://santiagosantoro.github.io/Proyecto-propio" target="_blank">
-                        <img src="img/umf-index.png" alt="">
+                        <img src="img/umf-index.png" alt="Sitio web de Under My Feet">
                         <div class="overlay">
                             <h3>Under My Feet Website</h3>
-                            <p>Desarrollo Web</p>
+                            <p data-i18n="bandProjectSummary">Sitio web responsive para la banda Under My Feet, con información y acceso a su merchandising.</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
+                    <div class="project-content">
+                        <h3>Under My Feet Website</h3>
+                        <p data-i18n="bandProjectSummary">Sitio web responsive para la banda Under My Feet, con información y acceso a su merchandising.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>Sass</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="proyecto">
                     <a href="https://santiago-santoro-portfolio.netlify.app" target="_blank">
-                        <img src="img/portfolio.jpg" alt="">
+                        <img src="img/portfolio.jpg" alt="Portfolio personal">
                         <div class="overlay">
                             <h3>Mi Portfolio</h3>
-                            <p>Desarrollo Front-End JavaScript</p>
+                            <p data-i18n="portfolioProjectSummary">Portfolio personal para presentar mi perfil, experiencia y proyectos de desarrollo.</p>
                         </div>
                     </a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                    <div class="project-content">
+                        <h3>Mi Portfolio</h3>
+                        <p data-i18n="portfolioProjectSummary">Portfolio personal para presentar mi perfil, experiencia y proyectos de desarrollo.</p>
+                        <ul class="project-tech" aria-label="Tecnologías" data-i18n-aria-label="technologies">
+                            <li>JavaScript</li><li>HTML</li><li>CSS</li>
+                        </ul>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -616,17 +582,17 @@
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
+            <h2 data-i18n="contactTitle">Contacto</h2>
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
                     <form action="https://formspree.io/f/xzbnrjbd" method="POST">
-                        <input type="text" name="nombre" placeholder="Tú Nombre">
-                        <input type="text" name="telefono" placeholder="Número telefónico">
-                        <input type="email" name="correo" placeholder="Dirección de correo">
-                        <input type="text" name="tema" placeholder="Tema">
-                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button type="submit">Enviar Mensaje</button>
+                        <input type="text" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="namePlaceholder">
+                        <input type="text" name="telefono" placeholder="Número telefónico" data-i18n-placeholder="phonePlaceholder">
+                        <input type="email" name="correo" placeholder="Dirección de correo" data-i18n-placeholder="emailPlaceholder">
+                        <input type="text" name="tema" placeholder="Tema" data-i18n-placeholder="subjectPlaceholder">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" data-i18n-placeholder="messagePlaceholder"></textarea>
+                        <button type="submit" data-i18n="sendMessage">Enviar mensaje</button>
                     </form>
                 </div>
                 <!-- Mapa -->
@@ -639,15 +605,15 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Rosario, Santa Fe, Argentina
+                                <span data-i18n="contactLocation">Rosario, Santa Fe, Argentina</span>
                             </li>
                             <li>
                                 <i class="fa-brands fa-linkedin-in"></i>
-                                Contactame: https://www.linkedin.com/in/santiago-santoro/
+                                <span data-i18n="contactLinkedIn">Contactame:</span> <a href="https://www.linkedin.com/in/santiago-santoro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: santiagosantoro10@gmail.com
+                                <span data-i18n="contactEmail">Email:</span> santiagosantoro10@gmail.com
                             </li>
                         </ul>
                     </div>
