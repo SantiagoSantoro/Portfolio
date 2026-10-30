@@ -70,7 +70,6 @@
             </div>
 
             <h2>SANTIAGO SANTORO</h2>
-            <h3 data-i18n="fullStackDeveloper">Desarrollador Full Stack</h3>
 
             <div class="hero-redes">
                 <a href="https://instagram.com/santiagoosantoro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -130,10 +129,6 @@
                         <li>
                             <strong data-i18n="location">Ubicación</strong>
                             Rosario. Santa Fe. Argentina
-                        </li>
-                        <li>
-                            <strong data-i18n="position">Cargo</strong>
-                            <span data-i18n="fullStackDeveloper">Desarrollador Full Stack</span>
                         </li>
                     </ul>
                 </div>
@@ -443,7 +438,7 @@
                 </article>
                 <article class="proyecto">
                     <a href="https://xtreme-shop.netlify.app/" target="_blank">
-                        <img src="img/xtr-shop.jpg" alt="Vista de X-treme Shop">
+                        <img class="project-image-cover" src="img/xtr-shop.jpg" alt="Vista de X-treme Shop">
                         <div class="overlay">
                             <p data-i18n="viewProject">Ver proyecto</p>
                         </div>
@@ -458,7 +453,7 @@
                 </article>
                 <article class="proyecto">
                     <a href="https://santiagosantoro.github.io/Proyecto-propio/pages/merch.html" target="_blank">
-                        <img src="img/merch.png" alt="Tienda de merchandising de Under My Feet">
+                        <img class="project-image-cover" src="img/merch.png" alt="Tienda de merchandising de Under My Feet">
                         <div class="overlay">
                             <p data-i18n="viewProject">Ver proyecto</p>
                         </div>
@@ -473,7 +468,7 @@
                 </article>
                 <article class="proyecto">
                     <a href="https://santiagosantoro.github.io/Proyecto-propio" target="_blank">
-                        <img src="img/umf-index.png" alt="Sitio web de Under My Feet">
+                        <img class="project-image-cover" src="img/umf-index.png" alt="Sitio web de Under My Feet">
                         <div class="overlay">
                             <p data-i18n="viewProject">Ver proyecto</p>
                         </div>
@@ -488,7 +483,7 @@
                 </article>
                 <article class="proyecto">
                     <a href="https://santiago-santoro-portfolio.netlify.app" target="_blank">
-                        <img src="img/portfolio.jpg" alt="Portfolio personal">
+                        <img class="project-image-cover" src="img/portfolio.jpg" alt="Portfolio personal">
                         <div class="overlay">
                             <p data-i18n="viewProject">Ver proyecto</p>
                         </div>
@@ -521,28 +516,18 @@
                         <button type="submit" data-i18n="sendMessage">Enviar mensaje</button>
                     </form>
                 </div>
-                <!-- Mapa -->
                 <div class="col">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13390.771294445123!2d-60.670471307384474!3d-32.95911852302135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab71d4358d3f%3A0xb7ef373f1ab15369!2sParque%20Independencia%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1709129230471!5m2!1ses-419!2sar"
-                        width="800" height="600" style="border-radius: 20px;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span data-i18n="contactLocation">Rosario, Santa Fe, Argentina</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                <span data-i18n="contactLinkedIn">Contactame:</span> <a href="https://www.linkedin.com/in/santiago-santoro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <span data-i18n="contactEmail">Email:</span> santiagosantoro10@gmail.com
-                            </li>
-                        </ul>
-                    </div>
+                    <aside class="contact-message">
+                        <span class="contact-message__eyebrow">
+                            <i class="fa-regular fa-comments" aria-hidden="true"></i>
+                            <span data-i18n="contactInvitationEyebrow">Hablemos</span>
+                        </span>
+                        <h3 data-i18n="contactInvitationTitle">¿Tenés un proyecto en mente?</h3>
+                        <p data-i18n="contactInvitation">Contame de qué se trata. Estoy abierto a conversar sobre ideas, proyectos y nuevas oportunidades.</p>
+                        <span class="contact-message__rule" aria-hidden="true"></span>
+                        <span class="contact-message__reply" data-i18n="contactReply">Te respondo a la brevedad.</span>
+                        <i class="fa-solid fa-paper-plane contact-message__decoration" aria-hidden="true"></i>
+                    </aside>
                 </div>
             </div>
         </div>

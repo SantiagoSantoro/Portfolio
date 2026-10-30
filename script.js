@@ -37,7 +37,6 @@ const translations = {
         personalDetails: "Personal details",
         email: "Email",
         location: "Location",
-        position: "Professional role",
         focus: "Focus",
         downloadCv: "Download CV",
         downloadResume: "Download English resume",
@@ -105,9 +104,10 @@ const translations = {
         subjectPlaceholder: "Subject",
         messagePlaceholder: "Message",
         sendMessage: "Send message",
-        contactLocation: "Rosario, Santa Fe, Argentina",
-        contactLinkedIn: "Contact me:",
-        contactEmail: "Email:"
+        contactInvitationEyebrow: "Let's talk",
+        contactInvitationTitle: "Have a project in mind?",
+        contactInvitation: "Tell me about it. I'm open to discussing ideas, projects, and new opportunities.",
+        contactReply: "I'll get back to you soon."
     }
 };
 

@@ -134,7 +134,7 @@ html {
 .sobremi {
     background-color: #1e2326;
     color: #fff;
-    padding: 90px 20px;
+    padding: 70px 20px;
 }
 
 .sobremi .contenido-seccion {
@@ -197,6 +197,15 @@ html {
     border-radius: 5px;
     display: inline-block;
 }
+
+.sobremi .fila .col ul li a {
+    transition: color .2s ease;
+}
+
+.sobremi .fila .col ul li a:hover {
+    color: var(--yellow);
+}
+
 .sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
@@ -299,7 +308,7 @@ color:var(--yellow);
 .skills {
     background-color: var(--bg2);;
     color: #fff;
-    padding: 90px 20px;
+    padding: 70px 20px;
 }
 
 .skills .contenido-seccion {
@@ -631,7 +640,7 @@ color:var(--yellow);
 .curriculum {
     background-color: #1e2326;
     color: #fff;
-    padding: 90px 20px;
+    padding: 70px 20px;
 }
 
 .curriculum .contenido-seccion {
@@ -774,7 +783,7 @@ color:var(--yellow);
 .portfolio {
     background-color: var(--bg2);;
     color: #fff;
-    padding: 90px 20px;
+    padding: 70px 20px;
 }
 
 .portfolio .contenido-seccion {
@@ -874,7 +883,7 @@ box-shadow:0 10px 25px rgba(0,0,0,.35);
     background-image: url(img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
-    padding: 90px 20px;
+    padding: 70px 20px;
 }
 
 .contacto .contenido-seccion {
@@ -940,32 +949,122 @@ box-shadow:0 10px 25px rgba(0,0,0,.35);
     width: 100%;
 }
 
-.contacto .col iframe {
+.contacto .fila {
+    align-items: stretch;
+    gap: 24px;
+}
+
+.contacto .col {
+    display: flex;
+}
+
+.contacto form {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     width: 100%;
+    min-height: 450px;
+    padding: clamp(28px, 4vw, 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 209, 0, .4);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(32, 32, 32, .98), rgba(27, 27, 27, .96));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .28);
 }
 
-.contacto .col .info {
+.contact-message {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: 100%;
+    min-height: 450px;
+    padding: clamp(28px, 4vw, 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 209, 0, .4);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(32, 32, 32, .98), rgba(27, 27, 27, .96));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .28);
+}
+
+.contact-message::before {
+    content: "";
     position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 230px;
+    height: 230px;
+    right: -80px;
+    bottom: -90px;
+    border: 1px solid rgba(255, 209, 0, .12);
+    border-radius: 50%;
+    box-shadow: 0 0 0 26px rgba(255, 209, 0, .025), 0 0 0 52px rgba(255, 209, 0, .02);
 }
 
-.contacto .col .info ul {
-    list-style: none;
-}
-
-.contacto .col .info ul li {
-    margin-bottom: 20px;
-}
-
-.contacto .col .info ul li i {
+.contact-message__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
     color: var(--yellow);
-    display: inline-block;
-    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-message__eyebrow i {
+    font-size: 16px;
+}
+
+.contact-message h3 {
+    max-width: 420px;
+    margin: 18px 0 14px;
+    font-size: clamp(28px, 3.3vw, 40px);
+    line-height: 1.15;
+}
+
+.contact-message p {
+    max-width: 400px;
+    margin: 0;
+    color: #c7c7c7;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.contact-message__rule {
+    width: 54px;
+    height: 3px;
+    margin: 28px 0 16px;
+    border-radius: 4px;
+    background: var(--yellow);
+}
+
+.contact-message__reply {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-message__decoration {
+    position: absolute;
+    right: 36px;
+    bottom: 34px;
+    color: rgba(255, 209, 0, .12);
+    font-size: 76px;
+    transform: rotate(-12deg);
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contacto .col textarea {
+    resize: vertical;
 }
 
 footer {
@@ -1048,6 +1147,14 @@ footer .arriba {
 }
 
 @media screen and (max-width:700px) {
+    .sobremi,
+    .skills,
+    .curriculum,
+    .portfolio,
+    .contacto {
+        padding: 55px 20px;
+    }
+
     .sobremi .fila {
         display: block;
     }
@@ -1100,6 +1207,26 @@ footer .arriba {
     .contacto .fila .col {
         width: 100%;
     }
+
+    .contact-message {
+        min-height: 260px;
+        padding: 28px;
+    }
+
+    .contacto form {
+        min-height: 0;
+        padding: 24px;
+    }
+
+    .contact-message h3 {
+        font-size: 30px;
+    }
+
+    .contact-message__decoration {
+        right: 22px;
+        bottom: 18px;
+        font-size: 56px;
+    }
 }
 /* HERO NUEVO */
 .hero-contenedor{
@@ -1129,7 +1256,7 @@ footer .arriba {
 }
 
 .hero-texto h1{
-    font-size:42px;
+    font-size:46px;
     margin-bottom:20px;
 }
 
@@ -1312,17 +1439,18 @@ footer .arriba {
 
     .sobremi .fila .col ul li.github-detail {
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 
     .sobremi .fila .col ul li.github-detail strong {
-        flex: 0 0 86px;
-        width: 86px;
+        width: auto;
     }
 
     .sobremi .fila .col ul li.github-detail a {
         white-space: nowrap;
-        font-size: clamp(11px, 3.8vw, 14px);
+        font: inherit;
     }
 }
 .contenido-banner{
@@ -1589,6 +1717,15 @@ footer .arriba {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.portfolio .galeria .proyecto > a > img.project-image-cover {
+    object-fit: cover;
+    object-position: center top;
+}
+
+.portfolio .galeria .proyecto:hover > a > img.project-image-cover {
+    transform: scale(1);
 }
 
 .portfolio .galeria .proyecto .overlay {
