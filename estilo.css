@@ -1129,7 +1129,7 @@ footer .arriba {
 }
 
 .hero-texto h1{
-    font-size:48px;
+    font-size:42px;
     margin-bottom:20px;
 }
 
@@ -1283,10 +1283,46 @@ footer .arriba {
     .hero-contenedor{
         flex-direction:column;
         text-align:center;
+        gap: 36px;
     }
 
     .hero-botones{
         justify-content:center;
+    }
+}
+
+@media (max-width:700px) {
+    .hero-card {
+        order: -1;
+        max-width: 100%;
+    }
+
+    .hero-texto h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .sobremi .fila .col {
+        width: 100%;
+    }
+
+    .sobremi .fila .col ul {
+        padding-left: 0;
+    }
+
+    .sobremi .fila .col ul li.github-detail {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .sobremi .fila .col ul li.github-detail strong {
+        flex: 0 0 86px;
+        width: 86px;
+    }
+
+    .sobremi .fila .col ul li.github-detail a {
+        white-space: nowrap;
+        font-size: clamp(11px, 3.8vw, 14px);
     }
 }
 .contenido-banner{
@@ -1479,11 +1515,6 @@ footer .arriba {
 @media (max-width: 500px) {
     .contenedor-header header .logo a {
         font-size: 25px;
-    }
-
-    .hero-texto h1 {
-        font-size: 36px;
-        line-height: 1.15;
     }
 
     .language-toggle {
